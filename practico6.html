@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 6</title>
+</head>
+<body>
+    <p>Practico 6</p>
+    <fieldset>
+        <form action="basededatosdeformulario.php" method="get" enctype="multipart/form-data">
+            <fieldset><legend>Campos de varios tipos</legend>
+                <label for="name">Ingrese nombre:</label>
+                <input type="text" id="name" name="name" value=""><br><br>
+                <label for="num">Ingrese numero:</label>
+                <input type="number" id="num" name="num" value=""><br><br>
+                <label for="pass">Ingrese contraseña:</label><br>
+                <input type="password" id="pass" name="pass" value=""><br><br>
+                <label for="tel">Ingrese su tel: </label>
+                <input type="tel" id="tel" name="tel" value=""><br><br>
+                <input type="time"><br><br>
+                <input type="week"><br><br>
+                <input type="datetime-local">
+            </fieldset>
+            <fieldset><legend>Datos personales</legend>
+                <label for="name">Ingrese nombre:</label>
+                <input type="text" id="name" name="name" value=""><br><br>
+                <label for="apell">Ingrese apellido:</label>
+                <input type="text" id="apell" name="apell" value=""><br><br>
+                <label for="num">Ingrese numero:</label>
+                <input type="number" id="num" name="num" value=""><br><br>
+            </fieldset>
+            <fieldset><legend>Radio</legend>
+                <p>Indique el sexo: 
+                    <input type="radio" id="hombre" name="genero" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="genero" value="mujer">
+                    <label for="mujer">Mujer</label>
+                </p>    
+            </fieldset>
+            <fieldset><legend>CheckBox</legend>
+                <p>
+                    Selecciona tus intereses: <br>
+                    <input type="checkbox" id="peliculas" name="eleccion" value="peliculas">
+                    <label for="deportes">Peliculas</label><br>
+                    <input type="checkbox" id="libros" name="eleccion" value="libros">
+                    <label for="libros">Libros</label><br>
+                    <input type="checkbox" id="revistas" name="eleccion" value="revistas">
+                    <label for="cine">Revistas</label>    
+                </p>
+                <input type="text" id="placeholder" name="placeholder" placeholder="Comience con Mayúscula" value="">
+                <label for="placeholder">Placeholder</label><br><br>
+                <input type="text" id="autofocus" name="autofocus" value="" autofocus>
+                <label for="autofocus">Autofocus</label><br><br>
+                <input type="text" id="pattern" name="pattern" pattern="">
+                <label for="pattern">Pattern</label><br><br>
+                <select name="opc" id="opc">
+                    <option value="op1">Opcion 1</option>
+                    <option value="opc2">Opcion 2</option>
+                </select>    
+            </fieldset><br>
+            <input type="button" value="Botón">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <a href="index.html"><input type="button" value="Atras"></a>
+            <br><br>
+            <input type="file"><br><br>
+            <input type="month" name="" id="">    
+        </form>
+    </fieldset>
+</body>
+</html>

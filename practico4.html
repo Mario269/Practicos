@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 4</title>
+</head>
+<body>
+    <p>Practico 4</p>
+    <h3>Formulario de contacto</h3>
+    <fieldset>
+        <form action="basededatosdeformulario.php" method="get" enctype="multipart/form-data">
+            <fieldset><legend>Datos personales</legend>
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" value=""><br><br>
+                <label for="tel">Teléfono:</label>
+                <input type="text" id="tel" name="tel" value=""><br><br>
+                <label for="correo">Correo electronico:</label>
+                <input type="text" id="correo" name="correo" value=""><br><br>
+                <p>País: 
+                    <select name="pais" id="pais">
+                        <option value="uruguay">Uruguay</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="argentina">Argentina</option>    
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset><legend>Intereses</legend>
+                <input type="checkbox" id="opcion1" name="opciones" value="opcion1">
+                <label for="opcion1">Deportes</label><br>
+                <input type="checkbox" id="opcion2" name="opciones" value="opcion2">
+                <label for="opcion2">Musica</label>    
+            </fieldset><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <a href="index.html"><input type="button" value="Atras"></a>    
+        </form>
+    </fieldset>
+</body>
+</html>
